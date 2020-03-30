@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfAppProject2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppProject2"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Меню шаблонов" Height="887" Width="620">
+    <Grid Background="DarkSeaGreen" ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Content="Выберите шаблон резюме" FontSize="24" HorizontalContentAlignment="Center" ></Label>
+        <Button x:Name="btnT1" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Content="Хронологическое" FontSize="18" Click="BtnT1_Click" Background="White"></Button>
+        <Button x:Name="btnT2" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Content="Функциональное" FontSize="18" Click="BtnT2_Click" Background="White"></Button>
+        <Button x:Name="btnT3" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3" Content="Комбинированное" FontSize="18" Click="BtnT3_Click" Background="White"></Button>
+        <Button x:Name="btnT4" Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" Content="Профессиональное" FontSize="18" Click="BtnT4_Click" Background="White"></Button>
+        <Button x:Name="btnT5" Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="3" Content="Академическое " FontSize="18" Click="BtnT5_Click" Background="White"></Button>
+
+        <!--<Button x:Name="btnBack" Grid.Column="0" Grid.Row="13" Content="Back" FontSize="14"></Button>-->
+
+        <Button x:Name="btnClose" Grid.Column="2" Grid.Row="12"  Content="Close" FontSize="14" Height="58" Margin="0,0,0.4,56.6" Grid.RowSpan="3" VerticalAlignment="Bottom" Click="BtnClose_Click" Background="White" />
+
+    </Grid>
+</Window>

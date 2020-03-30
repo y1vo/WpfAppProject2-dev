@@ -1,0 +1,90 @@
+﻿<Window x:Class="WpfAppProject2.WindowT4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppProject2"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Профессиональное резюме" Height="887" Width="620">
+    <Grid Background="WhiteSmoke" ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="fullname" Text="Имя и Фамилия" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" FontSize="24"></TextBox>
+
+
+        <TextBlock Text="Цель:" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3"></TextBlock>
+        <TextBox x:Name="aim" Text="" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="4" FontSize="24"></TextBox>
+
+        <TextBlock Text="Дата рождения:" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4"></TextBlock>
+        <TextBox x:Name="birthday" Text="" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="4" FontSize="24"></TextBox>
+
+        <TextBlock Text="Желаемый ур ЗП:" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="5" ></TextBlock>
+        <TextBox x:Name="salary" Text="" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="4" FontSize="24"></TextBox>
+
+        <TextBlock Text="Контактный телефон:" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="6" ></TextBlock>
+        <TextBox x:Name="phone" Text="" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="4" FontSize="24"></TextBox>
+
+        <TextBlock Text="Электронная почта:" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="7" ></TextBlock>
+        <TextBox x:Name="mail" Text="" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="4" FontSize="24"></TextBox>
+
+        <TextBlock Text="Гажданство:" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="8" ></TextBlock>
+        <TextBox x:Name="citizenship" Text="" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="4" FontSize="24"></TextBox>
+
+        <TextBlock Text="Город:" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="9" ></TextBlock>
+        <TextBox x:Name="address" Text="" Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="4" FontSize="24"></TextBox>
+
+        <TextBlock Text="Переезд в другой город:" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="10" ></TextBlock>
+        <TextBox x:Name="relocation" Text="Да/Нет" Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="3" FontSize="24"></TextBox>
+
+        <TextBlock Text="Опыт работы:" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="12" ></TextBlock>
+        <TextBox x:Name="experience" Text="" Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="7" Grid.RowSpan="8" FontSize="24"></TextBox>
+
+
+
+        <Button x:Name="btnBack" Grid.Column="0" Grid.Row="22"  Content="Back" FontSize="14" Click="BtnBack_Click" Background="DarkSeaGreen"></Button>
+        <Button x:Name="btnNext" Grid.ColumnSpan="4" Grid.Column="9" Grid.Row="22" Content="Next" FontSize="14" Click="BtnNext_Click" Background="DarkSeaGreen"></Button>
+        <Button x:Name="btnClose" Grid.Column="4" Grid.Row="22"  Content="Close" FontSize="14" Click="BtnClose_Click" Background="DarkSeaGreen"></Button>
+
+        <Image  x:Name="img1" Grid.ColumnSpan="2" Grid.Column="7"  Height="143" Margin="0.2,25,-0.4,0" Grid.Row="1" Grid.RowSpan="5" VerticalAlignment="Top" Width="137"/>
+        <Button  x:Name="btnAddPic" Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="2" Content="Добавить картинку" Click="BtnAddPic_Click" Background="DarkSeaGreen"></Button>
+    </Grid>
+</Window>
