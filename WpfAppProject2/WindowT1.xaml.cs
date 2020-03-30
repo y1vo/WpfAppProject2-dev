@@ -65,8 +65,13 @@ namespace WpfAppProject2
 
         private void BtnClose_Click(object sender, RoutedEventArgs e)
         {
-            SendData();
-            person.SaveDataToLog();
+            MessageBoxResult boxResult = MessageBox.Show("Хотите сохранить свой результат?", "Сообщение", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (boxResult == MessageBoxResult.Yes)
+            {
+                SendData();
+                person.SaveDataToLog();
+            }
             this.Close();
             Environment.Exit(0);
         }
@@ -81,6 +86,8 @@ namespace WpfAppProject2
 
         private void BtnNext_Click(object sender, RoutedEventArgs e)
         {
+            SendData();
+            person.SaveDataToLog();
             WindowSaveInFormat window = new WindowSaveInFormat();
             window.Owner = this;
             window.Show();
