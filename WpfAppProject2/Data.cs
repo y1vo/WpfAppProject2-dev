@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace WpfAppProject2
     public abstract class Data
     {
         private List<string> personalData = new List<string>();
-        private string filePath = @"C:\Users\w4\Desktop\Exam WPF\WpfAppProject2-dev\SaveLog.txt";
+        private string filePath = Path.Combine(Directory.CreateDirectory(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "log")).FullName, "log.txt");
         private string template;
         private string fullName;
         private string address;

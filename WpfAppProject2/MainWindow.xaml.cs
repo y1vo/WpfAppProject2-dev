@@ -93,7 +93,10 @@ namespace WpfAppProject2
         {
             this.Close();
 
-            if (File.Exists(person.FilePath)) { File.Delete(person.FilePath); }
+            if (File.Exists(person.FilePath))
+            {
+                File.Delete(person.FilePath);
+            }
 
             Environment.Exit(0);
         }
